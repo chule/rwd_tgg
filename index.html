@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +15,7 @@
     <header class="banner" role="banner">
 
         <h1 class="logo"><a href="#">Branding Agency</a></h1>
-
-
-        <nav class="navigation" role="navigation">
-            <ul>
-                <li><a class="menu-item" href="#">About</a></li>
-                <li><a class="menu-item" href="#">Portfolio</a></li>
-                <li><a class="menu-item" href="#">Blog</a></li>
-                <li><a class="menu-item" href="#">Services</a></li>
-                <li><a class="menu-item" href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="#menu" class="f-nav-link">Menu</a>
 
         <div class="banner-text">
             <h2>Prototyping Collaboration &amp; Workflow</h2>
@@ -38,7 +29,7 @@
 
             <div class="text-container">
                 <p>
-                    We believe that magic happens when design, technology and business intersect. That’s why we always
+                    We believe that magic happens when design, technology and business intersect. Thatâ€™s why we always
                     collaborate as an integrated partner, working side-by-side with our clients and their teams. We work
                     with a variety of clients, from early-stage startups to established companies. Our work is
                     experienced on nearly any platform and device, from computers and phones, to televisions and
@@ -58,7 +49,8 @@
             <h2 class="title">What we do?</h2>
 
             <div class="box">
-                <img src="images/branding.png"/>               
+                <img src="images/branding-small.png"/> 
+                <!--<img src="branding-small.jpg" alt="" srcset="branding-small 1x, branding.jpg 2x"> -->            
 
                 <h3>Branding</h3>
 
@@ -67,7 +59,13 @@
                 </p>
             </div>
             <div class="box">
-                <img src="images/storytelling.png"/>
+                <!-- <img src="images/storytelling-small.png"/> -->
+
+                <picture>
+                    <source media="(min-width: 400px)" srcset="images/storytelling-small.png">
+                    <source media="(min-width: 600px)" srcset="images/storytelling.png">
+                    <img src="images/storytelling-small.png" alt="">
+                </picture>
 
                 <h3>Storytelling</h3>
 
@@ -76,7 +74,7 @@
                 </p>
             </div>
             <div class="box">
-                <img src="images/information-design.png"/>
+                <img src="images/information-design-small.png"/>
 
                 <h3>Information Design</h3>
 
@@ -99,11 +97,11 @@
                     <input type="text"/>
                 </div>
                 <div class="field">
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input type="email"/>
                 </div>
                 <div class="field">
-                    <label>Telephone</label>
+                    <label>Telephone:</label>
                     <input type="tel"/>
                 </div>
 
@@ -118,9 +116,18 @@
         <article class="message">
             <p>We believe that magic happens when design, technology and business intersect.</p>
         </article>
+        <nav id="menu" class="navigation" role="navigation">
+            <ul>
+                <li><a class="menu-item" href="#">About</a></li>
+                <li><a class="menu-item" href="#">Portfolio</a></li>
+                <li><a class="menu-item" href="#">Blog</a></li>
+                <li><a class="menu-item" href="#">Services</a></li>
+                <li><a class="menu-item" href="#">Contact</a></li>
+            </ul>
+        </nav>
     </main>
     <footer role="contentinfo">
-        <p>Copyright©2014.<a href="http://2014.thegeekgathering.org">TGGCon</a></p>
+        <p>CopyrightÂ©2014.<a href="http://2014.thegeekgathering.org">TGGCon</a></p>
     </footer>
 </div>
 </body>

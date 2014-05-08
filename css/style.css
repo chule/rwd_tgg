@@ -1,125 +1,197 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font: 87%/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 body {
-    font-size: 16px; 
+    font-size: 1rem;
 }
 ul {
   list-style-type: none;
 }
-
-h1 {
-    font-size: 1.5em;
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-p, blockquote {
-    font-size: 1.1em;
+h1, h2, h3 {
+    text-align: center;
+    margin: 0.5em 0;
 }
-
-.main {
-    display: table;
-}
-
-.container {
+input,
+textarea {
+    padding: 5px;
     width: 100%;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+}
+input[type=submit] {
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #660000;
+    cursor: pointer;
+}
+.container {
     max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 .banner {
-    max-width: 1000px;
-    background: url(../images/banner.jpg) no-repeat 50% 50%;
-    height: 150px;
-    /* float: left; */
+    background: url(../images/banner-mobile.jpg) no-repeat 50% 50%;
+    padding: 10px;
+    height: 185px ;
 }
-
-.navigation {
-    margin: 10px;
-    float: right;
-    
-}
-
-.navigation ul li {
-    display:inline;
-}
-
-.text-container {
-    width: 70%;
-    float: left;
-}
-.about {
-    float: left;
-}
-
-.quote {
-    width: 30%;
-    float: right;
-}
-
-
-.banner-text {
-    margin-left: auto;
-    margin-right: auto;
-    top: 50px; 
-}
-/*
-.banner ul {
-    float: right;
-    list-style: none;
-}
-*/
-
 .logo a {
-    margin: 10px;
     float: left;
     display: block;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    width: 244px;
+    width: 50%;
+    max-width: 244px;
     height: 51px;
+    text-align: left;
     background: url(../images/logo.png) no-repeat 50% 50%;
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
+.f-nav-link {
+    color: #fff;
+    padding: 5px 10px;
+    float: right;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.banner-text {
+    text-align: center;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+.banner-text h2{
+    font-size: 1.2rem;
+}
+article {
+    padding: 20px;
+        text-align: center;
+}
+article img {
+    margin: 20px auto;
 
+}
 .about {
-
+    background: #69D4F6;
+    color: #fff;
+}
+.message {
+    background: #ff8000;
+    color: #fff;
+    font-size: 1.5em;
+}
+.join-us {
+    background: #69D4F6;
+    color: #fff; 
+    text-align: left;  
+}
+.navigation li:first-child {
+    border-top: none;
+}
+.navigation li {
+    border-top: 1px solid #999;
+}
+.navigation li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background: #666;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    background-color: #333;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #ccc;
+}
+footer a {
+    color: #fff;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
-
-}
-
-
-
-.products img {
-    max-width: 100%;
-
-}
-
-@media all and (min-width: 800px) {
-    .products .box{
-        padding: 0 2.5%;
+@media all and (min-width:600px) {
+    .banner {
+        background: url(../images/banner-tablet.jpg) no-repeat 50% 50%;
+        height: 309px;
+    }
+    .banner-text {
+        padding: 30px 0;
+        font-size: 1.2rem;
+    }
+    .banner-text h2{
+        font-size: 2rem;
+    }
+    .products {
+        overflow: hidden;
+    }
+    .box {
+        width: 33.33333%;
         float: left;
-        width: 33.3%;
-        clear: right;
-
+        padding: 20px;
 
     }
-    body {
-        color: red;
+    .join-us, .message {
+        padding: 20px 20%;
     }
 
-    .join-us {
+ }
+ @media all and (min-width:900px) {
+    .banner {
+        background: url(../images/banner.jpg) no-repeat 50% 50%;
+        height: 600px;
+    } /*
+    .main {
+        display: table;
+    }
+    .navigation {
         display: table-header-group;
+    } */
+    .container {
+        position: relative;
     }
-    
-
+    .navigation {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    .navigation ul {
+        text-align: right;
+        white-space: nowrap;
+    }
+    .navigation li {
+        display: inline;
+        border: none;
+        margin: 0 10px;
+    }
+    .navigation li a {
+        background: none;
+        display: inline;
+    }
+    .f-nav-link {
+        display: none;
+    }
+    .banner-text {
+        padding: 100px;
+        font-size: 2rem;
+    }
+    .banner-text h2 {
+        font-size: 3rem;
+    }
+ }
+ @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .logo {
+            background: url(../images/logo-x2.png) no-repeat;
+    }
 }
