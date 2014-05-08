@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font: 87%/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+body {
+    font-size: 16px; 
+}
+ul {
+  list-style-type: none;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p, blockquote {
+    font-size: 1.1em;
+}
+
+.main {
+    display: table;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.banner {
+    max-width: 1000px;
+    background: url(../images/banner.jpg) no-repeat 50% 50%;
+    height: 150px;
+    /* float: left; */
+}
+
+.navigation {
+    margin: 10px;
+    float: right;
+    
+}
+
+.navigation ul li {
+    display:inline;
+}
+
+.text-container {
+    width: 70%;
+    float: left;
+}
+.about {
+    float: left;
+}
+
+.quote {
+    width: 30%;
+    float: right;
+}
+
+
+.banner-text {
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px; 
+}
+/*
+.banner ul {
+    float: right;
+    list-style: none;
+}
+*/
+
+.logo a {
+    margin: 10px;
+    float: left;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 244px;
+    height: 51px;
+    background: url(../images/logo.png) no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+
+.about {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+
+}
+
+
+
+.products img {
+    max-width: 100%;
+
+}
+
+@media all and (min-width: 800px) {
+    .products .box{
+        padding: 0 2.5%;
+        float: left;
+        width: 33.3%;
+        clear: right;
+
+
+    }
+    body {
+        color: red;
+    }
+
+    .join-us {
+        display: table-header-group;
+    }
+    
+
+}
